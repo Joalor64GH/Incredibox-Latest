@@ -16,4 +16,4 @@ i will add a modding branch to this soon lol just wait (but if you want to help 
 - changed the script min js to have all version completely moddable meaning all base version have been rewritten to be modifed by anyone
 - changed V6 B3 combo from code: "3,8,12,11,20" to code: "3,8,11,12,20" due to the incredibox devs not really fixing it
   
-  thats it really
+  and thats it really for now
