@@ -1,6 +1,2 @@
-# Incredibox
-The latest source code for Incredibox (as of the V9 Update).
-
-This was ripped from the Mac application.
-
-Pump it up and chill.
+# Incredibox (0.7.0 MODDABLE)
+I made this because why not and to keep track of the updates on the code if V9 B3 Update comes out this repo will be automatically updated to it
