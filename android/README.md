@@ -1,3 +1,6 @@
+COMPILED APK HERE! (for android user who cant compile it themselves)
+https://mega.nz/file/IIhlxTrR#Gu4aq9WaAruwuVfUAW16hzLi-eujQkJmbOfIDyqJTA0
+
 # Requirements
 Java Development Kit 
 > You can get the latest one [here](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html)
