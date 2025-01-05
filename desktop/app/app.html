@@ -12,115 +12,403 @@
         <link rel="stylesheet" type="text/css" href="css/style.min.css" />
     </head>
     <body class="black">
-        <div id="page-splash">
+        <div id="bck-global"></div>
+        <div id="app-incredibox" class="centermax">
+            <div id="content" class="noselect">
+                <div id="game">
+                    <div id="box-stage-bck"></div>
+                    <div id="box-stage">
+                        <canvas id="cnv-stage"></canvas>
+                        <div id="box-polo"></div>
+                    </div>
+                    <div id="box-bottom">
+                        <div id="bottom-shadow"></div>
+                        <div id="box-loader-polo" class="box-loader"></div>
+                        <div id="box-picto">
+                            <div class="pictoline top"></div>
+                            <div class="pictoline bot"></div>
+                        </div>
+                        <div id="watch-info">
+                            <div class="mixbanner">
+                                <div class="info">
+                                    <span class="title">Title</span>
+                                    <div class="dj">
+                                        <span class="name">DJ Name</span>
+                                        <div class="box-flag"><div class="fflag"></div></div>
+                                    </div>
+                                    <span class="dedi">Dedicated to Flash</span>
+                                </div>
+                                <div class="data">
+                                    <div class="stat">
+                                        <div class="boxstat liked">
+                                            <div class="txt"></div>
+                                            <div class="bck">
+                                                <svg class="icn-svg"><use xlink:href="#ic-like-mini"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="boxstat viewed">
+                                            <div class="txt"></div>
+                                            <div class="bck">
+                                                <svg class="icn-svg"><use xlink:href="#ic-view-mini"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="date"></span>
+                                </div>
+                                <div class="bt bt-big bt-round" id="bt-like">
+                                    <div class="bck">
+                                        <svg class="icn-svg"><use xlink:href="#ic-like"></use></svg>
+                                    </div>
+                                    <div class="hitzone"></div>
+                                </div>
+                                <div class="bt bt-big with-icn color-green" id="bt-save">
+                                    <div class="bck">
+                                        <svg class="icn-svg"><use xlink:href="#ic-edit"></use></svg>
+                                        <div class="txt">SAVE</div>
+                                    </div>
+                                    <div class="hitzone"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="box-video"><div id="fade-video"></div></div>
+                    <div id="box-top">
+                        <div id="box-bt">
+                            <div id="box-bt1">
+                                <div class="bt bt-big bt-round back" id="bt-back">
+                                    <div class="bck">
+                                        <svg class="icn-svg"><use xlink:href="#ic-close"></use></svg>
+                                    </div>
+                                    <div class="hitzone"></div>
+                                </div>
+                                <div class="bt bt-big with-icn" id="bt-stop">
+                                    <div class="bck">
+                                        <svg class="icn-svg"><use xlink:href="#ic-reset"></use></svg>
+                                        <div class="txt">RESET</div>
+                                    </div>
+                                    <div class="hitzone"></div>
+                                </div>
+                                <div class="bt bt-big with-icn color-blue" id="bt-random">
+                                    <div class="bck">
+                                        <svg class="icn-svg"><use xlink:href="#ic-random"></use></svg>
+                                        <div class="txt">AUTO</div>
+                                    </div>
+                                    <div class="hitzone"></div>
+                                </div>
+                                <div class="bt bt-big with-icn color-red" id="bt-record">
+                                    <div class="bck">
+                                        <svg class="icn-svg"><use xlink:href="#ic-live"></use></svg>
+                                        <div class="txt">REC</div>
+                                    </div>
+                                    <div class="hitzone"></div>
+                                </div>
+                                <div class="bt bt-big bt-round right home" id="bt-home">
+                                    <div class="bck">
+                                        <svg class="icn-svg"><use xlink:href="#ic-home"></use></svg>
+                                    </div>
+                                    <div class="hitzone"></div>
+                                </div>
+                            </div>
+                            <div id="box-bt2">
+                                <div class="item-left">
+                                    <div class="bt bt-big bt-round tool" id="bt-tool">
+                                        <div class="bck">
+                                            <svg class="icn-svg"><use xlink:href="#ic-burger"></use></svg>
+                                        </div>
+                                        <div class="hitzone"></div>
+                                    </div>
+                                    <div id="cnt-record"><span id="t-spent"></span><span id="t-duration"></span></div>
+                                </div>
+                                <div class="item-middle"><div id="box-bt-bonus"></div></div>
+                                <div class="item-right">
+                                    <div id="bt-clock">
+                                        <div id="clock-icn">
+                                            <svg class="icn-svg icn-gray" id="clock-icn-play"><use xlink:href="#ic-play"></use></svg> <svg class="icn-svg icn-gray" id="clock-icn-pause"><use xlink:href="#ic-pause"></use></svg>
+                                        </div>
+                                        <canvas id="cnv-clock" width="152" height="152"></canvas>
+                                        <div class="hitzone"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="box-reading-bar">
+                        <div id="reading-bar">
+                            <div id="reading-block"></div>
+                            <div id="reading-buffer"></div>
+                            <div id="reading-marker-bonus"></div>
+                            <div id="reading-marker"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="lock-pause"></div>
+        <div id="home">
+            <div id="gradient-top" class="gradient"></div>
+            <div id="gradient-bot" class="gradient"></div>
             <div class="centermax">
-                <div id="sp-intro">
-                    <div id="sp-title"></div>
-                    <div id="sp-baseline">Pump it up and chill</div>
-                    <div id="sp-experience">For the best experience use your headphones</div>
-                    <div id="sp-headphone"><img src="img/switch-casque.svg" width="126" height="150" alt="" /></div>
-                    <div id="sp-choose">Select a version to start mixing music</div>
-                </div>
-                <div id="sp-select">
-                    <div class="sp-line">
-                        <div class="vicon" id="icon1">
-                            <div class="img"></div>
-                            <div class="txt"></div>
-                            <div class="bul">
-                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
-                            </div>
-                        </div>
-                        <div class="vicon" id="icon2">
-                            <div class="img"></div>
-                            <div class="txt"></div>
-                            <div class="bul">
-                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
-                            </div>
-                        </div>
-                        <div class="vicon" id="icon3">
-                            <div class="img"></div>
-                            <div class="txt"></div>
-                            <div class="bul">
-                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
-                            </div>
-                        </div>
-                        <div class="vicon" id="icon4">
-                            <div class="img"></div>
-                            <div class="txt"></div>
-                            <div class="bul">
-                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sp-line">
-                        <div class="vicon hoverLocked" id="icon5">
-                            <div class="img"></div>
-                            <div class="txt"></div>
-                            <div class="bul">
-                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
-                            </div>
-                            <div class="ic-locked">
-                                <svg class="icn-svg"><use xlink:href="#ic-lock"></use></svg>
-                            </div>
-                        </div>
-                        <div class="vicon hoverLocked" id="icon6">
-                            <div class="img"></div>
-                            <div class="txt"></div>
-                            <div class="bul">
-                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
-                            </div>
-                            <div class="ic-locked">
-                                <svg class="icn-svg"><use xlink:href="#ic-lock"></use></svg>
-                            </div>
-                        </div>
-                        <div class="vicon hoverLocked" id="icon7">
-                            <div class="img"></div>
-                            <div class="txt"></div>
-                            <div class="bul">
-                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
-                            </div>
-                            <div class="ic-locked">
-                                <svg class="icn-svg"><use xlink:href="#ic-lock"></use></svg>
-                            </div>
-                        </div>
-                        <div class="vicon hoverLocked" id="icon8">
-                            <div class="img"></div>
-                            <div class="txt"></div>
-                            <div class="bul">
-                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
-                            </div>
-                            <div class="ic-locked">
-                                <svg class="icn-svg"><use xlink:href="#ic-lock"></use></svg>
-                            </div>
-                        </div>
-                        <div class="vicon hoverLocked" id="icon9">
-                            <div class="img"></div>
-                            <div class="txt"></div>
-                            <div class="bul">
-                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
-                            </div>
-                            <div class="ic-locked">
-                                <svg class="icn-svg"><use xlink:href="#ic-lock"></use></svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="main-bt">
                     <div class="box-top">
                         <div class="tl"></div>
+                        <div id="img-version"><div class="bck"></div></div>
                         <div class="tr">
-                            <div id="home-bt-info" class="bt bt-round bt-44">
+                            <div id="home-bt-info" class="bt bt-round bt-44 color">
                                 <div class="bck">
                                     <svg class="icn-svg"><use xlink:href="#ic-info"></use></svg>
                                 </div>
                                 <div class="hitzone"></div>
                             </div>
-                            <div id="home-bt-param" class="bt bt-round bt-44">
+                            <div id="home-bt-param" class="bt bt-round bt-44 color">
                                 <div class="bck">
                                     <svg class="icn-svg"><use xlink:href="#ic-settings"></use></svg>
                                 </div>
                                 <div class="hitzone"></div>
                             </div>
+                        </div>
+                    </div>
+                    <div id="img-titre"><div class="bck"></div></div>
+                    <div class="box-bot">
+                        <div id="home-bt-switch" class="bt bt-round bt-80 color">
+                            <div class="bck">
+                                <svg class="icn-svg"><use xlink:href="#ic-switch"></use></svg>
+                            </div>
+                            <div class="hitzone"></div>
+                        </div>
+                        <div class="center">
+                            <div id="load-box">
+                                <div class="scale">
+                                    <div class="progress-box"><div id="load-bar" class="progress-bar"></div></div>
+                                </div>
+                            </div>
+                            <div id="home-bt-play" class="bt bt-round color">
+                                <div class="bck">
+                                    <svg class="icn-svg"><use xlink:href="#ic-play"></use></svg>
+                                </div>
+                                <div class="hitzone"></div>
+                            </div>
+                        </div>
+                        <div id="home-bt-list" class="bt bt-round bt-80 color hoverLocked">
+                            <div class="bck">
+                                <svg class="icn-svg"><use xlink:href="#ic-mixlist"></use></svg>
+                            </div>
+                            <div class="ic-locked">
+                                <svg class="icn-svg"><use xlink:href="#ic-lock"></use></svg>
+                            </div>
+                            <div class="hitzone"></div>
+                        </div>
+                    </div>
+                    <div id="home-dedicated"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box-popup" id="pop-switch">
+            <div class="bac"></div>
+            <div class="flex">
+                <div class="scale">
+                    <div class="box">
+                        <div class="pop">
+                            <div class="container">
+                                <div class="title">Enjoy other versions</div>
+                                <div id="sp-select">
+                                    <div class="sp-line">
+                                        <div class="vicon" id="icon1">
+                                            <div class="img"></div>
+                                            <div class="txt"></div>
+                                            <div class="bul">
+                                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="vicon" id="icon2">
+                                            <div class="img"></div>
+                                            <div class="txt"></div>
+                                            <div class="bul">
+                                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="vicon" id="icon3">
+                                            <div class="img"></div>
+                                            <div class="txt"></div>
+                                            <div class="bul">
+                                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="vicon" id="icon4">
+                                            <div class="img"></div>
+                                            <div class="txt"></div>
+                                            <div class="bul">
+                                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sp-line">
+                                        <div class="vicon hoverLocked" id="icon5">
+                                            <div class="img"></div>
+                                            <div class="txt"></div>
+                                            <div class="bul">
+                                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
+                                            </div>
+                                            <div class="ic-locked">
+                                                <svg class="icn-svg"><use xlink:href="#ic-lock"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="vicon hoverLocked" id="icon6">
+                                            <div class="img"></div>
+                                            <div class="txt"></div>
+                                            <div class="bul">
+                                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
+                                            </div>
+                                            <div class="ic-locked">
+                                                <svg class="icn-svg"><use xlink:href="#ic-lock"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="vicon hoverLocked" id="icon7">
+                                            <div class="img"></div>
+                                            <div class="txt"></div>
+                                            <div class="bul">
+                                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
+                                            </div>
+                                            <div class="ic-locked">
+                                                <svg class="icn-svg"><use xlink:href="#ic-lock"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="vicon hoverLocked" id="icon8">
+                                            <div class="img"></div>
+                                            <div class="txt"></div>
+                                            <div class="bul">
+                                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
+                                            </div>
+                                            <div class="ic-locked">
+                                                <svg class="icn-svg"><use xlink:href="#ic-lock"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="vicon hoverLocked" id="icon9">
+                                            <div class="img"></div>
+                                            <div class="txt"></div>
+                                            <div class="bul">
+                                                <svg class="icn-svg"><use xlink:href="#ic-check"></use></svg>
+                                            </div>
+                                            <div class="ic-locked">
+                                                <svg class="icn-svg"><use xlink:href="#ic-lock"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mixlist">
+            <div class="bac"></div>
+            <div id="poplist">
+                <div class="tabbox">
+                    <div class="tab icon" id="tab-latest">
+                        <div class="icon">
+                            <svg class="icn-svg"><use xlink:href="#ic-live-mini"></use></svg>
+                        </div>
+                        <div class="txt">Latest</div>
+                        <div class="hitzone"></div>
+                    </div>
+                    <div class="tab icon" id="tab-top50">
+                        <div class="icon">
+                            <svg class="icn-svg"><use xlink:href="#ic-trophy-mini"></use></svg>
+                        </div>
+                        <div class="txt">Top 50</div>
+                        <div class="hitzone"></div>
+                    </div>
+                    <div class="tab icon" id="tab-search">
+                        <div class="icon">
+                            <svg class="icn-svg"><use xlink:href="#ic-search-mini"></use></svg>
+                        </div>
+                        <div class="txt">Search</div>
+                        <div class="hitzone"></div>
+                    </div>
+                    <div class="tab icon" id="tab-mixlist">
+                        <div class="icon">
+                            <svg class="icn-svg"><use xlink:href="#ic-mixlist-mini"></use></svg>
+                        </div>
+                        <div class="txt">Mixlist</div>
+                        <div class="hitzone"></div>
+                    </div>
+                </div>
+                <div class="containbox">
+                    <div class="pagebox" id="box-latest"></div>
+                    <div class="pagebox" id="box-top50">
+                        <div class="tab-filter">
+                            <div class="bt color" id="bt-day">
+                                <div class="bck"><div class="txt">Day</div></div>
+                                <div class="hitzone"></div>
+                            </div>
+                            <div class="bt color" id="bt-week">
+                                <div class="bck"><div class="txt">Week</div></div>
+                                <div class="hitzone"></div>
+                            </div>
+                            <div class="bt color" id="bt-month">
+                                <div class="bck"><div class="txt">Month</div></div>
+                                <div class="hitzone"></div>
+                            </div>
+                            <div class="bt color" id="bt-year">
+                                <div class="bck"><div class="txt">Year</div></div>
+                                <div class="hitzone"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagebox" id="box-search">
+                        <div class="tab-filter">
+                            <div class="bt color" id="bt-name">
+                                <div class="bck"><div class="txt">DJ name</div></div>
+                                <div class="hitzone"></div>
+                            </div>
+                            <div class="bt color" id="bt-title">
+                                <div class="bck"><div class="txt">Mix title</div></div>
+                                <div class="hitzone"></div>
+                            </div>
+                            <div class="bt color" id="bt-dedi">
+                                <div class="bck"><div class="txt">Dedicated to</div></div>
+                                <div class="hitzone"></div>
+                            </div>
+                        </div>
+                        <form action="javascript:clickBtSearch()" method="post" target="_self">
+                            <div class="formline">
+                                <input type="text" id="input-search" name="input-search" placeholder="Search for a mix" value="" maxlength="26" autocomplete="off" spellcheck="false" />
+                                <div class="input-loader">
+                                    <svg class="icn-svg"><use xlink:href="#ic-loader"></use></svg>
+                                </div>
+                            </div>
+                            <div class="bt bt-big bt-round color search" id="bt-search">
+                                <div class="bck">
+                                    <svg class="icn-svg"><use xlink:href="#ic-search"></use></svg>
+                                </div>
+                                <div class="hitzone"></div>
+                            </div>
+                            <input type="submit" style="visibility: hidden; position: absolute;" />
+                        </form>
+                    </div>
+                    <div class="pagebox" id="box-mixlist">
+                        <div class="tab-filter">
+                            <div class="bt with-icn color" id="bt-mymix">
+                                <div class="bck">
+                                    <svg class="icn-svg"><use xlink:href="#ic-mixlist"></use></svg>
+                                    <div class="txt">My mix</div>
+                                </div>
+                                <div class="hitzone"></div>
+                            </div>
+                            <div class="bt with-icn color" id="bt-myfav">
+                                <div class="bck">
+                                    <svg class="icn-svg"><use xlink:href="#ic-rate"></use></svg>
+                                    <div class="txt">My Fav</div>
+                                </div>
+                                <div class="hitzone"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="scrollbox">
+                        <div class="boxline"></div>
+                        <div class="boxinfo"></div>
+                        <div class="spinner-box">
+                            <svg class="icn-svg col-version"><use xlink:href="#ic-loader"></use></svg>
                         </div>
                     </div>
                 </div>
@@ -396,6 +684,9 @@
         <div id="lock-all"></div>
         <div id="dragbar"></div>
         <script src="js/libs/jquery.js"></script>
+        <script src="js/libs/TweenMax.min.js"></script>
+        <script src="js/libs/EasePack.min.js"></script>
+        <script src="js/libs/ScrollToPlugin.min.js"></script>
         <script src="js/script.min.js"></script>
         <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
