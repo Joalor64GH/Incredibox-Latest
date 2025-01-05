@@ -4,6 +4,7 @@ FOR IOS go back to "main" because you cant make a mod for ios
 
 
 # EXAMPLES FOR MODDING VERSIONS
+I recommend using this site first then you can go back to this: https://boogoxseal.xyz/tools/appjs
 ![versionexamplev9code](https://github.com/user-attachments/assets/3c61c50a-1232-41e4-90c7-5a5f3f2cae7d)
 
 to change what version you want it on you can change the "versions.v1" to like "versions.v2", "versions.v3", "versions.v4" and so on all the way up to "versions.v9" unless if you want to add a custom version
