@@ -1,4 +1,4 @@
-COMPILED APK HERE! (for android user who cant compile it themselves)
+COMPILED APK HERE! (for android users who cant compile it themselves)
 https://mega.nz/file/IIhlxTrR#Gu4aq9WaAruwuVfUAW16hzLi-eujQkJmbOfIDyqJTA0
 
 # Requirements
