@@ -13,6 +13,9 @@ THE MODDING BRANCH IS NOW HERE! go to the "main" branch and change it to "moddin
 
 # CHANGELOG
 
+# FIXED (1/6/25)
+V2 VOICE 2 UNIQSND WAS NOT SET TO FALSE (now its fixed)
+
 # ADDED (1/5/25)
 MODDING BRANCH YOOOOOOOO! (that was fast)
 
