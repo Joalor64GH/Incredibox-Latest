@@ -1,26 +1,17 @@
-# Incredibox (0.7.0 MODDABLE)
-I made this because why not and to keep track of the updates on the code if V9 B3 Update comes out this repo will be automatically updated to it
-why did I make idk cuz why not
-
-# IMPORTANT NOTE!
-this repo is meant for modders and NOT for people playing the paid version for free AT ALL so if you want to play the OG game please buy it on https://www.incredibox.com
-or play the demo instead: https://www.incredibox.com/demo
+# MODDING
+you can choose "desktop" to make a mod for the pc version or the "android" version to make a mod for android
+FOR IOS go back to "main" because you cant make a mod for ios
 
 
-# FOR MODDERS
-i will add a modding branch to this soon lol just wait (but if you want to help me do it add me on discord rizsimstudiosvillagers)
+# EXAMPLES FOR MODDING VERSIONS
+I recommend using this site first then you can go back to this: https://boogoxseal.xyz/tools/appjs
+![versionexamplev9code](https://github.com/user-attachments/assets/3c61c50a-1232-41e4-90c7-5a5f3f2cae7d)
 
+to change what version you want it on you can change the "versions.v1" to like "versions.v2", "versions.v3", "versions.v4" and so on all the way up to "versions.v9" unless if you want to add a custom version
+that requires some css coding and stuff
 
-# WHATS ADDED AND CHANGED (1/1/25)
-- added V9 B2
-- changed the script min js to have all version completely moddable meaning all base version have been rewritten to be modifed by anyone
-- changed V6 B3 combo from code: "3,8,12,11,20" to code: "3,8,11,12,20" due to the incredibox devs not really fixing it
-  
-# FIXED (1/4/25)
-V2 BONUS 3 LOOP WAS AT 6 NOW FIXED BEING SET TO 4
-V4 MELODY 2 SOUND ONLY HAD ONE LOOP (set to true) NOW FIXED BY SETTING IT TO FALSE (now having two loops)
-V5 BONUS 2 AND 3 WERE ON THE WRONG LOOPS they were set to 2 for b2 and for b3 it was 3 (now both set to 1)
+# FOR POLOS
+![poloanimearrayexamplev9code](https://github.com/user-attachments/assets/818364f3-4eed-4a7a-9e2f-e2afc274d139)
 
-Its all thanks to void02_ for spotting the errors when played thru bluestacks
-
-and thats it really for now
+# FOR BONUSES
+![bonusexamplev9code](https://github.com/user-attachments/assets/a67e339e-330e-42be-8501-bd2731867c5d)
