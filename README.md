@@ -27,3 +27,9 @@ Its all thanks to void02_ for spotting the errors when played thru bluestacks
 - added V9 B2
 - changed the script min js to have all version completely moddable meaning all base version have been rewritten to be modifed by anyone
 - changed V6 B3 combo from code: "3,8,12,11,20" to code: "3,8,11,12,20" due to the incredibox devs not really fixing it
+
+# CREATED (4/30/23)
+- THE REPO WAS CREATED WITH THE V9 CODE (before 0.7.0)
+- The latest source code for Incredibox (as of the V9 B1 Update).
+- This was ripped from the Mac application.
+- Pump it up and chill.
