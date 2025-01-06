@@ -36,7 +36,7 @@ Before each modification, redownload this repo to be sure that all files are cor
    You will also be asked to enter details, you can keep it all Unknown and when it asks you if it is correct, answer <ins>yes</ins>  
 
   # IMPORTANT NOTE BY RIZSIM STUDIOS
-   The default password is "changeit" if not then go check you set it to make this work
+   The default password is "changeit" if not then go check the thing then come back to this to make this work
 
 5. Now we can sign the apk file with this command  
    ```
