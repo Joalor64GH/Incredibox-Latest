@@ -1,5 +1,5 @@
 COMPILED APK HERE! (for android users who cant compile it themselves)
-https://mega.nz/file/ZY4yWATZ#Hyfnj3a3XzsKhQgaEqlr81ZgtLK4SARfJxPJCf9RSdc
+https://mega.nz/file/IIhlxTrR#Gu4aq9WaAruwuVfUAW16hzLi-eujQkJmbOfIDyqJTA0
 
 # Requirements
 Java Development Kit 
@@ -26,7 +26,7 @@ Before each modification, redownload this repo to be sure that all files are cor
 2. After doing your modifications, go back to /android and open Command Prompt here  
 3. In Command Prompt first thing you want to do is building the apk with this command  
    ```
-   java -jar apktool.jar b -f -d source -o Incredibox-v0.5.4-unaligned.apk
+   java -jar apktool.jar b -f -d source -o Incredibox-v0.7.0-unaligned.apk
    ```  
 4. Then you need to sign the apk file but first we need to generate a key with this command  (please note the typing is invisible!)
    ```
@@ -36,21 +36,35 @@ Before each modification, redownload this repo to be sure that all files are cor
    You will also be asked to enter details, you can keep it all Unknown and when it asks you if it is correct, answer <ins>yes</ins>  
 
   # IMPORTANT NOTE BY RIZSIM STUDIOS
-   The default password is "changeit" if not then go check the thing then come back to this to make this work
+   The default password is "changeit" if not then go check you set it to make this work
 
 5. Now we can sign the apk file with this command  
    ```
-   jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore my-release-key.keystore Incredibox-v0.5.4-unaligned.apk alias_name
+   jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore my-release-key.keystore Incredibox-v0.7.0-unaligned.apk alias_name
    ```  
 6. Verify the apk file with this command  
    ```
-   jarsigner -verify -verbose -certs Incredibox-v0.5.4-unaligned.apk
+   jarsigner -verify -verbose -certs Incredibox-v0.7.0-unaligned.apk
    ```  
    If verification passed correctly, you can continue  
 7. Last thing you need to do is aligning the apk file with this command  
    ```
-   zipalign -v 4 Incredibox-v0.5.4-unaligned.apk Incredibox-v0.5.4.apk
+   zipalign -v 4 Incredibox-v0.5.4-unaligned.apk Incredibox-v0.7.0.apk
    ```  
-8. You should now have file called `Incredibox-v0.5.4.apk` which you can move to your phone and install  
+8. You should now have file called `Incredibox-v0.7.0.apk` which you can move to your phone and install  
    If a prompt shows up saying <ins>Blocked by Play Protect</ins>, just click <ins>install anyway</ins>  
    The reason, you recieve this promt is because you signed the apk file yourself and Play Protect doesn't recognize the developer's signature  
+
+# IMPORTANT THING IS
+to make sure your mod DOES NOT replace the OG APP itself use APK Editor Pro: https://com-gmail-heagoo-apkeditor-pro.en.uptodown.com/android (its the thing I like using alot)
+and yes it was put thru virustotal to ensure it was safe: https://www.virustotal.com/gui/url/8fb811b613438c6ba82a980219b92b1e6e3cefc80f91cae79c590bbb39e504c3/detection 
+
+# FINDING THE MANIFEST THING
+to replace the app manifest line if you are using apk editor pro is go to APK FILE first (once you have apk editor pro open) if you downloaded it then
+then you click full edit on edit mode and decode all files
+
+# THE MANIFEST LINE
+find "com.sofarsogood.incredibox" (if you compiled it yourself) or "com.rizsimstudios.incredibox.v9moddablecopy" (if you downloaded the pre complied one)
+and replace the line with whatever you want starting with "com"
+
+heres an example "com.yournamehere.modname.versionnodots" (its opitional to have it also included with the the thing ".v9codeport" for anyone downloading it would know)
