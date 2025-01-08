@@ -1,5 +1,5 @@
 COMPILED APK HERE! (for android users who cant compile it themselves)
-https://mega.nz/file/IIhlxTrR#Gu4aq9WaAruwuVfUAW16hzLi-eujQkJmbOfIDyqJTA0
+https://mega.nz/file/ZY4yWATZ#Hyfnj3a3XzsKhQgaEqlr81ZgtLK4SARfJxPJCf9RSdc
 
 # Requirements
 Java Development Kit 
