@@ -10,8 +10,8 @@ or play the demo instead: https://www.incredibox.com/demo
 THE MODDING BRANCH IS NOW HERE! go to the "main" branch and change it to "modding" to access them! - Rizsim Studios
 
 # CHANGELOG
-# FIXED (1/12/25)
-DEOBFUSCATED THE ENTIREE `script.min.js` file!!
+# CHANGE (1/12/25)
+DEOBFUSCATED THE ENTIRE `script.min.js` file!!
 
 # FIXED (1/8/25)
 V4 MELO4 UNIQSND & V9 MELO2 WAS NOT SET TO FALSE (fixed that now)
