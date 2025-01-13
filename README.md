@@ -6,12 +6,12 @@ why did I make idk cuz why not
 this repo is meant for modders and NOT for people playing the paid version for free AT ALL so if you want to play the OG game please buy it on https://www.incredibox.com
 or play the demo instead: https://www.incredibox.com/demo
 
-
 # FOR MODDERS
 THE MODDING BRANCH IS NOW HERE! go to the "main" branch and change it to "modding" to access them! - Rizsim Studios
 
-
 # CHANGELOG
+# FIXED (1/12/25)
+DEOBFUSCATED THE ENTIREE `script.min.js` file!!
 
 # FIXED (1/8/25)
 V4 MELO4 UNIQSND & V9 MELO2 WAS NOT SET TO FALSE (fixed that now)
