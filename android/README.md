@@ -56,7 +56,7 @@ Before each modification, redownload this repo to be sure that all files are cor
    The reason, you recieve this promt is because you signed the apk file yourself and Play Protect doesn't recognize the developer's signature  
 
 # IMPORTANT THING IS
-to make sure your mod DOES NOT replace the OG APP itself use APK Editor Pro: https://mega.nz/file/ocxwVJCL#W7D0UmR38rRP-UZ0fDZTqLNimbowWTHRAKI5MZdSYvk (its the thing I like using alot)
+to make sure your mod DOES NOT replace the OG APP itself use APK Editor Pro: https://mega.nz/file/ocxwVJCL#W7D0UmR38rRP-UZ0fDZTqLNimbowWTHRAKI5MZdSYvk (its the thing I like using alot) and yes it safe I used this before plently amount of times to know that by now
 
 # FINDING THE MANIFEST THING
 to replace the app manifest line if you are using apk editor pro is go to APK FILE first (once you have apk editor pro open) if you downloaded it then
