@@ -49,15 +49,14 @@ Before each modification, redownload this repo to be sure that all files are cor
    If verification passed correctly, you can continue  
 7. Last thing you need to do is aligning the apk file with this command  
    ```
-   zipalign -v 4 Incredibox-v0.5.4-unaligned.apk Incredibox-v0.7.0.apk
+   zipalign -v 4 Incredibox-v0.7.0-unaligned.apk Incredibox-v0.7.0.apk
    ```  
 8. You should now have file called `Incredibox-v0.7.0.apk` which you can move to your phone and install  
    If a prompt shows up saying <ins>Blocked by Play Protect</ins>, just click <ins>install anyway</ins>  
    The reason, you recieve this promt is because you signed the apk file yourself and Play Protect doesn't recognize the developer's signature  
 
 # IMPORTANT THING IS
-to make sure your mod DOES NOT replace the OG APP itself use APK Editor Pro: https://com-gmail-heagoo-apkeditor-pro.en.uptodown.com/android (its the thing I like using alot)
-and yes it was put thru virustotal to ensure it was safe: https://www.virustotal.com/gui/url/8fb811b613438c6ba82a980219b92b1e6e3cefc80f91cae79c590bbb39e504c3/detection 
+to make sure your mod DOES NOT replace the OG APP itself use APK Editor Pro: https://mega.nz/file/ocxwVJCL#W7D0UmR38rRP-UZ0fDZTqLNimbowWTHRAKI5MZdSYvk (its the thing I like using alot) and yes it safe I used this before plently amount of times to know that by now
 
 # FINDING THE MANIFEST THING
 to replace the app manifest line if you are using apk editor pro is go to APK FILE first (once you have apk editor pro open) if you downloaded it then
