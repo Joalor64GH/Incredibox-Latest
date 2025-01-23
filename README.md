@@ -10,6 +10,9 @@ or play the demo instead: https://www.incredibox.com/demo
 THE MODDING BRANCH IS NOW HERE! go to the "main" branch and change it to "modding" to access them! - Rizsim Studios
 
 # CHANGELOG
+# CHANGE (1/22/25)
+I MANAGED TO ADD BACK THE OLD POLO FORMAT BACK FOR THE SPRITE SO NOW YOU CAN HAVE CUSTOM POLO APPREARANCES AGAIN! (for v9 code) - Rizsim Studios
+
 # CHANGE (1/12/25)
 DEOBFUSCATED THE ENTIRE `script.min.js` file!!
 
